@@ -54,7 +54,7 @@ public class PlayerControlerClase : MonoBehaviour
         // Salto
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
-            Vector3 v = m_Rigidbody.linearVelocity; // si te falla, usa m_Rigidbody.velocity
+            Vector3 v = m_Rigidbody.linearVelocity; 
             v.y = 0f;
             m_Rigidbody.linearVelocity = v;
 
